@@ -1,0 +1,16 @@
+langcode: da
+status: true
+dependencies: {  }
+id: os2web_postlister
+label: 'OS2Web Postlister'
+description: ''
+weight: 0
+storage: folder
+folder: modules/contrib/os2web_postlister/config/install
+module: {  }
+theme: {  }
+complete_list:
+  - 'os2web_postlister*'
+  - '*os2web_postlister*'
+  - '*os2web_postlister'
+partial_list: {  }

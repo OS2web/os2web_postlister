@@ -1,0 +1,8 @@
+{
+  "name": "os2web/os2web_postlister",
+  "description": "Provide functionality for Postlister",
+  "type": "drupal-module",
+  "require": {},
+  "license": "EUPL-1.2",
+  "minimum-stability": "dev"
+}
