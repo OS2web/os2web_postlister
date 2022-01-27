@@ -1,2 +1,17 @@
 <?php
 
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * On a new node save copies header from title if header value is empty.
+ */
+function os2web_postlister_node_presave(NodeInterface $node) {
+  if ($node->isNew() && $node->getType() == 'os2web_postlister') {
+    // If header is empty, use the title.
+    if (empty($node->field_os2web_postlister_heading->value)) {
+      $node->field_os2web_postlister_heading->value = $node->label();
+    }
+  }
+}
